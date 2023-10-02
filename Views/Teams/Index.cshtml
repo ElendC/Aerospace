@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@model List<Aerospace.Models.Teams>
+<
+
+<div>
+    
+    <div class="team-list">
+        <div class="team-title">
+            <h2>THE BOARD</h2>
+            <h2></h2>
+        </div>
+
+        @{
+            var uniqueGroups = Model.Select(team => team.Group).Distinct();
+            }
+
+
+        @foreach (var group in uniqueGroups)
+        {   //CHANGE THE CSS TO DISPLAY team-title over each group
+            <div  class="team-title">
+                <h2>THIS SHOULD SHOW FOR EACH GROUP</h2>
+            </div>
+            foreach (var team in Model.Where(t=> t.Group == group))
+            {
+               
+                <div class="team-member">
+
+                    <img class="team-image" src="~/Pics/background/background2.jpg" />
+                    <div>
+                        <p class="team-name-text">@team.Name</p>
+                        <p class="team-role-text">@team.Role</p>
+                    </div>
+                </div>
+                
+                //include team.Name in img path to auto allocate right picture for right person
+            }
+        }
+
+    </div>
+</div>
+
+
+

@@ -1,0 +1,110 @@
+﻿body {
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.background_image {
+    background-image: url("../Pics/background/bakgrunn1.png");  /*CHANGE BACKGROUND FOR LAYOUT HERE*/
+    
+    height: 100vh;  /*100% of the viewport height */
+    width: 100vw;  /*100% of the viewport width */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+footer {
+    position: absolute;
+    bottom: 3%;
+    color: white;
+    left: 5%;
+}
+
+.linkNormalizer{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*FOR TEAMS PAGE*/
+.team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width:100%;
+    margin: 0 auto;
+  
+    position: relative;
+   
+}
+.team-member {
+    flex: 0 0 295px;
+    height: 295px;
+    margin: 38px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 123px;
+    /*border: 1px solid #ccc;*/
+}
+.team-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 80%;
+}
+.team-name-text{
+    color:white;
+    font-size: x-large;
+    background:red;
+    margin: auto;
+    padding: 0px;
+    text-align:center;
+}
+.team-role-text {
+    color: white;
+    font-size: large;
+    background: red;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.team-title {
+    margin-bottom: 10px;
+  
+    position: absolute;
+    text-align:center;
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+    
+}
+
+
+/*FOR TEAMS PAGE*/
+
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h1{
+    padding-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
