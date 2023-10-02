@@ -20,9 +20,9 @@
 
         @foreach (var group in uniqueGroups)
         {   //CHANGE THE CSS TO DISPLAY team-title over each group
-            <div  class="team-title">
+            @*<div  class="team-title">
                 <h2>THIS SHOULD SHOW FOR EACH GROUP</h2>
-            </div>
+            </div>*@
             foreach (var team in Model.Where(t=> t.Group == group))
             {
                
